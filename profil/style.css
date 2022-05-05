@@ -1,0 +1,346 @@
+/* Début Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fin du reset */
+
+/* Début sidebar */
+
+
+
+.sidebar{
+    background-color: #272727;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.other{
+    background-color: rgb(0, 255, 255);
+    width: 90%;
+    margin-left: 10%;
+}
+
+figcaption{
+    color: white;
+}
+
+.imgLogo{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+.separation{
+    color: white;
+    width: 70%;
+}
+
+.imgProfil{
+    width: 50%;
+    height: auto;
+}
+
+/* Fin sidebar */
+
+body{
+    background-image: url("../background.svg");
+}
+
+.main
+{
+    display: flex;
+}
+
+/* Début couverture */
+.couverture img{
+    width: 90%;
+    height: 7em;
+    padding-left: 10%;
+}
+/* Fin couverture */
+
+/* Début profil */
+.profil{
+    position: relative;
+    left: 10%;
+    width: 20%;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 3%;
+}
+
+.profil img{
+    margin-top: 1em;
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profil input, .profil p{
+    background-color: white;
+    border: solid black 1px;
+}
+
+.profil p{
+    width: 80%;
+    left: 10%;
+    position: relative;
+}
+
+.profil input{
+    width: 45%;
+}
+
+
+/* Fin profil */
+
+/* Début publication*/
+.publication{
+    width: 47%;
+    position: relative;
+    left: 10%;
+    margin-top: 10px;
+}
+
+
+.photoProfilPublication{
+    width: 10%;
+    height: auto;
+    margin: 1%;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 1em;
+
+}
+
+.pseudo{
+    vertical-align: sub;
+    font-weight: bold;
+}
+
+
+.publicationAuteur{
+    background-color: white;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.titrePublication{
+    margin: 1%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.messagePublication{
+    margin-left: 1em;
+}
+
+.photoPublication{
+    width: 97%;
+    margin: 1%;
+}
+
+.icones{
+    background-color: white;
+    text-align: center;
+    margin: 1%;
+}
+
+.Like, .Commenter, .Partager{
+    padding-left: 11%;
+    padding-right: 11%;
+    width: 5%;
+}
+
+.commentaire{
+    background-color: white;
+}
+
+.photoProfilCommentaire{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+.pseudoCommentaire{
+    vertical-align: sub;
+    font-weight: bold;
+}
+
+.messageCommentaire{
+    vertical-align: sub;
+    margin-left: 1em;
+}
+
+/* Fin publication */
+
+
+
+.amisEtPhotos{
+    width: 20%;
+    position: relative;
+    left: 10%;
+}
+
+
+/* Début amis */
+.amis{
+    background-color: black;
+    margin: 10px;
+    border-radius: 3%;
+    text-align: center;
+}
+
+.amis input{
+    background-color: white;
+    border: solid black 1px;
+    position:relative;
+}
+
+.amis img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.amis figure{
+    display: inline-block;
+    width: 40%;
+    position: relative;
+}
+
+.boutonAmis{
+   margin: 5%;
+}
+ 
+/* Fin amis */
+
+/* Début photos */
+.photos{
+    background-color: black;
+    margin: 10px;
+    border-radius: 3%;
+    text-align: center;
+}
+
+.photos input{
+    background-color: white;
+    border: solid black 1px;
+    position:relative;
+}
+
+.photos img{
+    display: inline-block;
+    width: 40%;
+    position: relative;
+}
+
+.boutonPhotos{
+    margin: 5%;
+ }
+/* Fin photos */
+
+
+
+
+
+
+.formPublication{
+    margin-top: 1em;
+    text-align: center;
+}
+.inputTitrePublication{
+    width: 80%;
+    height: 3em;
+    background-color: rgba(128, 128, 128, 0.584);
+    border: solid black 1px;
+    box-shadow:none;
+    outline:0;
+}
+.inputMessagePublication{
+    width: 80%;
+    height: 5em;
+    background-color: rgba(128, 128, 128, 0.584);
+    border: solid black 1px;
+    margin-top: 0.5px;
+    box-shadow:none;
+    outline:0;
+}
+.boutonPublier{
+    width: 30%;
+    height: 3em;
+    background-color: black;
+    box-shadow:none;
+    outline:0;
+    border:0 none;
+    color: rgba(255, 255, 255, 0.67);
+    margin-top: 0.4em;
+}
+
+.toutCommentaire{
+    border: solid black 1px;
+}
+
+
+.publicationAuteur img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .image_publication {
+    max-width: 90%;
+    max-height: 90%;
+    border  : solid 2px black;
+    width: 100%;
+margin: 0 auto;
+
+}

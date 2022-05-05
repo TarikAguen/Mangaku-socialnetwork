@@ -1,0 +1,374 @@
+/* Début Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fin du reset */
+
+/* Début sidebar */
+
+
+
+
+main{
+    display: flex;
+}
+
+
+
+body{
+    background-image: url("../background.svg");    
+    font-family: "Superclarendon" ;
+}
+
+.sidebar{
+    background-color: #272727;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.other{
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    height: 100%;
+}
+
+figcaption{
+    color: white;
+}
+
+.imgLogo{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+.separation{
+    color: white;
+    width: 70%;
+}
+
+.imgProfil{
+    width: 50%;
+    height: auto;
+}
+
+/* Fin sidebar */
+
+
+
+@font-face {
+    font-family: "Superclarendon";
+    src: url("./polices/Superclarendon-Regular.woff2") format("woff2"), url("./polices/Superclarendon-Regular.woff")format("woff");
+    font-display: swap;
+  }
+
+
+
+.tt_tendance{
+    /* background-color: brown; */
+    width: 27%;
+    height: 70rem;
+}
+
+.tt_filactu{
+    /* background-color: green; */
+    width: 53%;
+    height: 70rem;
+    display: flex;
+
+}
+
+.tt_ami{
+    /* background-color: chocolate; */
+    width: 20%;
+    height: 70rem;
+    margin-top: 5rem;
+
+}
+
+.tag{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    
+}
+
+.tendance {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-top: 4rem;
+    /* position: fixed; */
+
+
+
+}
+.img_tend{
+    width: 7em;
+    height: 7em;
+}
+.tendace_1{
+    display: flex;
+}
+
+.profil_actu{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding-top: 1rem;
+
+
+}
+.p_profil_publi{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.p_post{
+    margin-left: 1rem;
+}
+
+.container_post{
+    height: 3rem;
+}
+.publi_actu{
+    text-align: center;
+    width: 95%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.comment_actu{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.svg_actu{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    background-color: white;
+    margin-top: 1rem;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.post{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 169px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.95);
+
+    
+}
+
+.publication{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 472px;
+    margin-top: 3rem;
+    border: solid 1px;
+
+
+}
+
+.friends{
+    background-color: rgb(255,  255, 255);
+    width: 85%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    margin-top: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+}
+.profil_publi{
+    display: flex;
+    margin-left: 1rem;
+}
+.btn_publie{
+    color: white;
+    border-radius: 9999px;
+    background-color: #FF0000;
+    border: solid 0px;
+    width: 5rem;
+    height: 2.3rem;
+}
+.react_post{
+    display: flex;
+    justify-content: space-around;
+    text-align:bottom;
+    margin-top: 2rem;
+
+}
+.img_publi_actu{
+    width: 90%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Début publication*/
+.publication{
+    width: 47%;
+    position: relative;
+    left: 10%;
+    margin-top: 10px;
+}
+
+
+.photoProfilPublication{
+    width: 10%;
+    height: auto;
+    margin: 1%;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 1em;
+
+}
+
+.pseudo{
+    vertical-align: sub;
+    font-weight: bold;
+}
+
+
+.publicationAuteur{
+    background-color: white;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.titrePublication{
+    margin: 1%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.messagePublication{
+    margin-left: 1em;
+}
+
+.photoPublication{
+    width: 97%;
+    margin: 1%;
+}
+
+.icones{
+    background-color: white;
+    text-align: center;
+    margin: 1%;
+}
+
+.Like, .Commenter, .Partager{
+    padding-left: 11%;
+    padding-right: 11%;
+    width: 5%;
+}
+
+.commentaire{
+    background-color: white;
+}
+
+.photoProfilCommentaire{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+.pseudoCommentaire{
+    vertical-align: sub;
+    font-weight: bold;
+}
+
+.messageCommentaire{
+    vertical-align: sub;
+    margin-left: 1em;
+}
+
+/* Fin publication */

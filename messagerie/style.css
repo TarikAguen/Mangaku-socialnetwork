@@ -1,0 +1,274 @@
+/* Début Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Fin du reset */
+
+/* Début Header */
+header{
+    background-color: black;
+    height: 4.5em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+main{
+    margin-top: 4em;
+}
+
+
+.retour{
+    left: 1.5%;
+    top: 1em;
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: auto;
+    position: fixed;
+}
+
+.iconeAmis{
+    left: 30%;
+    position: absolute;
+    top: 0.5em;
+    position: fixed;
+}
+
+.iconeNotifs{
+    left: 15%;
+    position: absolute;
+    top: 0.5em;
+    position: fixed;
+}
+
+.logoHeader{
+    left: 49%;
+    top: 0.6em;
+    position: absolute;
+    position: fixed;
+}
+
+.iconeGroupe{
+    left: 70%;
+    position: absolute;
+    top: 0.5em;
+    position: fixed;
+}
+
+.iconeParametres{
+    left: 85%;
+    position: absolute;
+    top: 0.75em;
+    position: fixed;
+}
+
+.logoHeader{
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+figcaption{
+    color: white;
+}
+/* Fin Header */
+
+/* Début Background */
+body{
+    background-image: url("../background.svg");
+    background-attachment: fixed;
+}
+/* Fin Background*/
+
+main{
+    display: flex;
+}
+
+/* Sidebar */
+.sidebarMessage{
+    width: 30%;
+    border-right: solid black 2px;
+    text-align: center;
+}
+
+.inputRecherche{
+    margin: 2em;
+    box-shadow:none;
+    border:0 none;
+    outline:0;
+    background-color: rgba(255, 255, 255, 0.365);
+    padding: 0.75em;
+}
+
+.messagePersonne{
+    display: flex;
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.ppPersonne{
+    width: 3em;
+    height: 3em;
+    margin: 0.5em;
+}
+
+.textPersonne{
+    padding: 1em;
+}
+
+/* Conversation */
+.conversation{
+    width: 70%;
+    position: fixed;
+    left: 30%;
+}
+
+.headerConversation{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.315);
+    padding-left: 7%;
+    margin-top: 2em;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ppDestinataire{
+    width: 5%;
+    margin-right: 1em;
+    border-radius: 50%;
+}
+
+.nomDestinataire{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+
+/* Message Destinataire */
+.infoDestinataireConversation{
+    display: flex;
+}
+.ppDestinataireConversation{
+    width: 3%;
+}
+.nomDestinataireConversation{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 0.5em;
+}
+.texteDestinataireConversation{
+    margin-left: 3em;
+    background-color: white;
+    width: 15%;
+    padding: 1em;
+    border-radius: 3%;
+}
+
+/* Message Reception */
+.reception{
+    left: 60%;
+    position: relative;
+}
+.infoReceptionConversation{
+    display: flex;
+}
+.ppReceptionConversation{
+    width: 3%;
+}
+.nomReceptionConversation{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 0.5em;
+    margin-left: 1.8em;
+}
+.texteReceptionConversation{
+    background-color: red;
+    color: white;
+    width: 15%;
+    padding: 1em;
+    border-radius: 3%;
+}
+
+.mainConversation{
+    background-color: rgba(255, 255, 255, 0.315);
+    width: 79%;
+    margin-top: 0.75em;
+    margin-right: 7%;
+    margin-left: 7%;
+    padding-left: 7%;
+    padding-top: 2em;
+}
+
+.inputMessage{
+    width: 90%;
+    height: 4em;
+    margin-top: 40%;
+    margin-bottom: 1.5em;
+    background-color: rgba(128, 128, 128, 0.584);
+    box-shadow:none;
+    border:0 none;
+    outline:0;
+}
+
+.boutonAjouterImage{
+    position: absolute;
+    right: 17.5%;
+    margin-top: 31.2%;
+}
+
+.boutonEnvoyer{
+    position: absolute;
+    right: 15%;
+    margin-top: 32.5%;
+}
